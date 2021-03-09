@@ -1,6 +1,8 @@
+import Page from "./Page";
+
 /**
  * Simple About page.
  */
 export default function AboutPage() {
-  return <main>I am the about page!</main>;
+  return <Page>I am the about page!</Page>;
 }
