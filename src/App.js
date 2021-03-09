@@ -1,4 +1,5 @@
 import "./App.css";
+import AppFooter from "./AppFooter";
 import AppHeader from "./AppHeader";
 import AppRoutes from "./AppRoutes";
 import AppRouter from "./AppRouter";
@@ -12,6 +13,7 @@ function App() {
       <AppRouter>
         <AppHeader />
         <AppRoutes />
+        <AppFooter />
       </AppRouter>
     </div>
   );

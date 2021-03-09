@@ -1,5 +1,8 @@
 .Page {
   padding: 0.5rem;
-  max-width: 1000px;
+  width: 1000px;
+  box-sizing: border-box;
+  max-width: 100%;
   margin: 0 auto;
+  flex: 1;
 }
