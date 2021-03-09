@@ -1,0 +1,24 @@
+.AppNavigation {
+  flex: 1;
+}
+
+.AppNavigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.AppNavigation__Link {
+  padding: 0.5rem 0;
+  margin-left: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 900;
+}
+
+.AppNavigation__Link--Active {
+  border-bottom: 4px solid black;
+}

@@ -1,0 +1,19 @@
+.AppHeader {
+  box-shadow: 0 1.3px 2.2px rgba(0, 0, 0, 0.006),
+    0 3.1px 5.3px rgba(0, 0, 0, 0.008), 0 5.8px 10px rgba(0, 0, 0, 0.01),
+    0 10.3px 17.9px rgba(0, 0, 0, 0.012), 0 19.2px 33.4px rgba(0, 0, 0, 0.014),
+    0 46px 80px rgba(0, 0, 0, 0.02);
+  margin-bottom: 2rem;
+}
+
+.AppHeader__Wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.AppHeader__Logo img {
+  max-width: 180px;
+}
