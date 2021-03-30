@@ -1,0 +1,49 @@
+.SignUpForm {
+  border: 1px solid #ddd;
+  padding: 2rem;
+  display: inline-block;
+  width: 320px;
+}
+
+.SignUpForm label,
+.SignUpForm input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.SignUpForm label,
+.SignUpForm input[type="submit"] {
+  text-transform: uppercase;
+}
+
+.SignUpForm label {
+  margin-bottom: 1rem;
+  font-size: 11px;
+}
+
+.SignUpForm input[type="text"],
+.SignUpForm input[type="email"],
+.SignUpForm input[type="password"] {
+  font-size: 22px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  margin-top: 4px;
+  padding: 4px 8px;
+}
+
+.SignUpForm input[type="submit"] {
+  padding: 8px 16px;
+  border: none;
+  background: #464646;
+  border-radius: 4px;
+  color: rgb(255 255 255 / 90%);
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.75px;
+}
+
+.SignUpForm input[type="submit"]:hover {
+  cursor: pointer;
+  color: rgb(255 255 255 / 100%);
+}
