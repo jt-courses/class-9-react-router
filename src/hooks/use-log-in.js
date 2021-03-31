@@ -6,7 +6,7 @@ export function useLogIn() {
 
   const logIn = useCallback(
     (dto) => {
-      return fetch("/log-in", dto, {
+      return fetch("/api/auth/log-in", dto, {
         method: "post",
       });
     },

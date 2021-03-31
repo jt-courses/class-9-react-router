@@ -1,25 +1,26 @@
 import "./SignUpForm.css";
 
 import React, { useCallback } from "react";
-import { useSignUp } from "./hooks/use-sign-up";
+import { useLogIn } from "./hooks/use-log-in";
 
 export function LoginForm() {
-  const signup = useSignUp();
+  const login = useLogIn();
 
   const handleSubmit = useCallback(
     (e) => {
       e.preventDefault();
 
-      signup(new FormData(e.target))
+      login(new FormData(e.target))
         .then((response) => response.json())
         .then((result) => {
-          console.log(result);
-        })
-        .catch((error) => {
-          console.error(error);
+          if (result.error) {
+            alert(result.message);
+          } else {
+            alert("You are logged-in successfully.");
+          }
         });
     },
-    [signup]
+    [login]
   );
 
   return (

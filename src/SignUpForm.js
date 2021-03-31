@@ -13,10 +13,11 @@ export function SignUpForm() {
       signup(new FormData(e.target))
         .then((response) => response.json())
         .then((result) => {
-          console.log(result);
-        })
-        .catch((error) => {
-          console.error(error);
+          if (result.error) {
+            alert(result.message);
+          } else {
+            alert("You are signed-up successfully.");
+          }
         });
     },
     [signup]

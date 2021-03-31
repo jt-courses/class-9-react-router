@@ -6,7 +6,7 @@ export function useSignUp() {
 
   const signUp = useCallback(
     (dto) => {
-      return fetch("/sign-up", dto, {
+      return fetch("/api/sign-up", dto, {
         method: "post",
       });
     },
